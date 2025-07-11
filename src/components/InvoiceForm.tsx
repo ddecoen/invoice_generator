@@ -108,38 +108,38 @@ export default function InvoiceForm() {
           <h2 className="text-xl font-semibold mb-4">Invoice Details</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-900 mb-1">
                 Invoice Number
               </label>
               <input
                 {...register('invoiceNumber')}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
               {errors.invoiceNumber && (
                 <p className="text-red-500 text-sm mt-1">{errors.invoiceNumber.message}</p>
               )}
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-900 mb-1">
                 Invoice Date
               </label>
               <input
                 type="date"
                 {...register('invoiceDate')}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
               {errors.invoiceDate && (
                 <p className="text-red-500 text-sm mt-1">{errors.invoiceDate.message}</p>
               )}
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-900 mb-1">
                 Due Date
               </label>
               <input
                 type="date"
                 {...register('dueDate')}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
               {errors.dueDate && (
                 <p className="text-red-500 text-sm mt-1">{errors.dueDate.message}</p>
@@ -153,73 +153,73 @@ export default function InvoiceForm() {
           <h2 className="text-xl font-semibold mb-4">From (Your Business)</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-900 mb-1">
                 Business Name
               </label>
               <input
                 {...register('fromName')}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
               {errors.fromName && (
                 <p className="text-red-500 text-sm mt-1">{errors.fromName.message}</p>
               )}
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-900 mb-1">
                 Email
               </label>
               <input
                 type="email"
                 {...register('fromEmail')}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
               {errors.fromEmail && (
                 <p className="text-red-500 text-sm mt-1">{errors.fromEmail.message}</p>
               )}
             </div>
             <div className="md:col-span-2">
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-900 mb-1">
                 Address
               </label>
               <input
                 {...register('fromAddress')}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
               {errors.fromAddress && (
                 <p className="text-red-500 text-sm mt-1">{errors.fromAddress.message}</p>
               )}
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-900 mb-1">
                 City
               </label>
               <input
                 {...register('fromCity')}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
               {errors.fromCity && (
                 <p className="text-red-500 text-sm mt-1">{errors.fromCity.message}</p>
               )}
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-900 mb-1">
                 State
               </label>
               <input
                 {...register('fromState')}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
               {errors.fromState && (
                 <p className="text-red-500 text-sm mt-1">{errors.fromState.message}</p>
               )}
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-900 mb-1">
                 ZIP Code
               </label>
               <input
                 {...register('fromZip')}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
               {errors.fromZip && (
                 <p className="text-red-500 text-sm mt-1">{errors.fromZip.message}</p>
@@ -233,73 +233,73 @@ export default function InvoiceForm() {
           <h2 className="text-xl font-semibold mb-4">To (Client)</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-900 mb-1">
                 Client Name
               </label>
               <input
                 {...register('toName')}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
               {errors.toName && (
                 <p className="text-red-500 text-sm mt-1">{errors.toName.message}</p>
               )}
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-900 mb-1">
                 Email
               </label>
               <input
                 type="email"
                 {...register('toEmail')}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
               {errors.toEmail && (
                 <p className="text-red-500 text-sm mt-1">{errors.toEmail.message}</p>
               )}
             </div>
             <div className="md:col-span-2">
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-900 mb-1">
                 Address
               </label>
               <input
                 {...register('toAddress')}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
               {errors.toAddress && (
                 <p className="text-red-500 text-sm mt-1">{errors.toAddress.message}</p>
               )}
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-900 mb-1">
                 City
               </label>
               <input
                 {...register('toCity')}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
               {errors.toCity && (
                 <p className="text-red-500 text-sm mt-1">{errors.toCity.message}</p>
               )}
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-900 mb-1">
                 State
               </label>
               <input
                 {...register('toState')}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
               {errors.toState && (
                 <p className="text-red-500 text-sm mt-1">{errors.toState.message}</p>
               )}
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-900 mb-1">
                 ZIP Code
               </label>
               <input
                 {...register('toZip')}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
               />
               {errors.toZip && (
                 <p className="text-red-500 text-sm mt-1">{errors.toZip.message}</p>
@@ -326,19 +326,19 @@ export default function InvoiceForm() {
             {fields.map((field, index) => (
               <div key={field.id} className="grid grid-cols-1 md:grid-cols-5 gap-4 p-4 bg-white rounded-md">
                 <div className="md:col-span-2">
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-gray-900 mb-1">
                     Description
                   </label>
                   <input
                     {...register(`items.${index}.description`)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
                   />
                   {errors.items?.[index]?.description && (
                     <p className="text-red-500 text-sm mt-1">{errors.items[index]?.description?.message}</p>
                   )}
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-gray-900 mb-1">
                     Quantity
                   </label>
                   <input
@@ -347,14 +347,14 @@ export default function InvoiceForm() {
                       valueAsNumber: true,
                       onChange: () => updateItemAmount(index)
                     })}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
                   />
                   {errors.items?.[index]?.quantity && (
                     <p className="text-red-500 text-sm mt-1">{errors.items[index]?.quantity?.message}</p>
                   )}
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-gray-900 mb-1">
                     Rate ($)
                   </label>
                   <input
@@ -364,7 +364,7 @@ export default function InvoiceForm() {
                       valueAsNumber: true,
                       onChange: () => updateItemAmount(index)
                     })}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
                   />
                   {errors.items?.[index]?.rate && (
                     <p className="text-red-500 text-sm mt-1">{errors.items[index]?.rate?.message}</p>
@@ -372,10 +372,10 @@ export default function InvoiceForm() {
                 </div>
                 <div className="flex items-end">
                   <div className="flex-1">
-                    <label className="block text-sm font-medium text-gray-700 mb-1">
+                    <label className="block text-sm font-medium text-gray-900 mb-1">
                       Amount ($)
                     </label>
-                    <div className="px-3 py-2 bg-gray-100 border border-gray-300 rounded-md">
+                    <div className="px-3 py-2 bg-gray-100 border border-gray-300 rounded-md text-gray-900">
                       ${((watchedItems[index]?.quantity || 0) * (watchedItems[index]?.rate || 0)).toFixed(2)}
                     </div>
                   </div>
@@ -404,26 +404,26 @@ export default function InvoiceForm() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-medium text-gray-900 mb-1">
                   Tax Rate (%)
                 </label>
                 <input
                   type="number"
                   step="0.01"
                   {...register('taxRate', { valueAsNumber: true })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
                 />
                 {errors.taxRate && (
                   <p className="text-red-500 text-sm mt-1">{errors.taxRate.message}</p>
                 )}
               </div>
               <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-medium text-gray-900 mb-1">
                   Payment Terms
                 </label>
                 <select
                   {...register('paymentTerms')}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
                 >
                   <option value="Net 15">Net 15</option>
                   <option value="Net 30">Net 30</option>
@@ -435,13 +435,13 @@ export default function InvoiceForm() {
                 )}
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-medium text-gray-900 mb-1">
                   Notes
                 </label>
                 <textarea
                   {...register('notes')}
                   rows={3}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
                   placeholder="Additional notes or payment instructions..."
                 />
               </div>
@@ -450,15 +450,15 @@ export default function InvoiceForm() {
             <div className="bg-white p-4 rounded-md">
               <h3 className="text-lg font-semibold mb-3">Invoice Summary</h3>
               <div className="space-y-2">
-                <div className="flex justify-between">
+                <div className="flex justify-between text-gray-900">
                   <span>Subtotal:</span>
                   <span>${subtotal.toFixed(2)}</span>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between text-gray-900">
                   <span>Tax ({watchedTaxRate || 0}%):</span>
                   <span>${taxAmount.toFixed(2)}</span>
                 </div>
-                <div className="border-t pt-2 flex justify-between font-semibold text-lg">
+                <div className="border-t pt-2 flex justify-between font-semibold text-lg text-gray-900">
                   <span>Total:</span>
                   <span>${total.toFixed(2)}</span>
                 </div>
