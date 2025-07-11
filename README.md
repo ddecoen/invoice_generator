@@ -93,6 +93,77 @@ src/
 - Optimized for various screen sizes
 - Touch-friendly interface
 
+## Deployment
+
+### Recommended: Vercel (Easiest)
+
+Since this is a Next.js application, **Vercel** is the recommended deployment platform as it's built by the same team that created Next.js.
+
+#### Quick Deployment Steps:
+
+1. **Install Vercel CLI**:
+   ```bash
+   npm i -g vercel
+   ```
+
+2. **Deploy from your project directory**:
+   ```bash
+   cd invoice_generator
+   vercel
+   ```
+
+3. **Follow the prompts** - Vercel will automatically:
+   - Detect it's a Next.js app
+   - Configure build settings
+   - Connect to your GitHub repository
+   - Set up automatic deployments
+
+Your app will be available at a URL like `https://invoice-generator-xyz.vercel.app`
+
+#### Why Vercel?
+- ✅ **Zero configuration** - works with existing code as-is
+- ✅ **Next.js native support** - built specifically for Next.js apps
+- ✅ **Automatic deployments** from GitHub
+- ✅ **Free tier** with generous limits
+- ✅ **Global CDN** and HTTPS by default
+- ✅ **Perfect compatibility** with App Router and React Server Components
+
+### Alternative Deployment Options
+
+#### Netlify
+```bash
+npm run build
+# Deploy the build folder via Netlify's web interface
+```
+*Note: May require additional configuration for full Next.js feature support*
+
+#### Quick Testing with ngrok
+For temporary sharing during development:
+```bash
+# Install ngrok
+npm install -g ngrok
+
+# Start your dev server
+npm run dev
+
+# In another terminal, expose port 3000
+ngrok http 3000
+```
+This provides a temporary public URL for testing.
+
+#### Local Network Sharing
+If your team is on the same network:
+```bash
+npm run dev -- --hostname 0.0.0.0
+```
+Then share your local IP address (e.g., `http://192.168.1.100:3000`).
+
+### Environment Variables
+
+If you add any environment variables in the future, remember to configure them in your deployment platform:
+
+**Vercel**: Add them in the Vercel dashboard under Project Settings → Environment Variables
+
 ## Contributing
 
 1. Fork the repository
